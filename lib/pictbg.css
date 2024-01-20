@@ -1,0 +1,51 @@
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("img/bg-hero.webp") top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+
+#hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    color: azure;
+    font-family: "Poppins", sans-serif;
+    position: relative; 
+}
+
+#hero .container {
+    padding-top: 110px;
+}
+
+#hero h2 span {
+    color: rgb(243, 170, 34);
+    font-size: 28px;
+}
+
+#hero h2 {
+    color: #eee;
+    margin-bottom: 10px;
+    font-size: 24px;
+    position: relative;
+}
+
+
+@media (min-width: 1366px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
